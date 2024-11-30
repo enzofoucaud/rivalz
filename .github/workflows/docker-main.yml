@@ -2,8 +2,8 @@ name: Rivalz - Docker main
 
 on:
   push:
-    tags:
-      - v.*
+    branches:
+      - main
 
 jobs:
   build:

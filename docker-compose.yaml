@@ -10,3 +10,10 @@ services:
       - DISK_SIZE=${DISK_SIZE}
       - DISK_SELECTION=${DISK_SELECTION}
     restart: unless-stopped
+    volumes:
+      - rivalz_data:/root/.db
+      - rivalz_config:/root/.rivalz
+
+volumes:
+  rivalz_data:
+  rivalz_config:

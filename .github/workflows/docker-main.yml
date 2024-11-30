@@ -3,7 +3,7 @@ name: Rivalz - Docker main
 on:
   push:
     tags:
-      - MAIN.*
+      - main.*
 
 jobs:
   build:

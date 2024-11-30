@@ -1,4 +1,4 @@
-name: Massa
+name: Rivalz - Docker main
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - MAIN.*
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 

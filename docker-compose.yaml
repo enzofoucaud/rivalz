@@ -1,0 +1,12 @@
+services:
+  rivalz-node:
+    build: .
+    container_name: rivalz-node
+    env_file: .env
+    environment:
+      - WALLET_ADDRESS=${WALLET_ADDRESS}
+      - CPU_CORES=${CPU_CORES}
+      - RAM=${RAM}
+      - DISK_SIZE=${DISK_SIZE}
+      - DISK_SELECTION=${DISK_SELECTION}
+    restart: unless-stopped
